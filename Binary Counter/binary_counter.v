@@ -1,3 +1,5 @@
+`default_nettype none
+
 module binary_counter(
     input clk,
     output reg [7:0] led = 0
