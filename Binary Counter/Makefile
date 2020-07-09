@@ -3,9 +3,12 @@ SRC       = binary_counter
 PCF       = cu
 SCANSION  = /Applications/Scansion.app
 
-all: clean lint synthesis place upload
+.PHONY: all test check clean lint simulate synthesize place time upload
+all: clean lint simulate synthesize place time upload
 
 test: clean lint simulate
+
+check: clean lint synthesize place time
 
 clean:
 	$(RM) -rf obj_dir
@@ -20,11 +23,14 @@ simulate:
 	vvp $(TESTBENCH).vvp > $(TESTBENCH).txt
 	open $(SCANSION) $(TESTBENCH).vcd
 
-synthesis:
-	yosys -q -p "synth_ice40 -dsp -retime -abc2 -top $(basename $(SRC)) -json $(basename $(SRC)).json" $(SRC).v
+synthesize:
+	yosys -q -p "synth_ice40 -dsp -abc9 -abc2 -top $(basename $(SRC)) -json $(basename $(SRC)).json" $(SRC).v
 
 place:
 	nextpnr-ice40 -q --freq 100 --promote-logic --opt-timing --package cb132 --hx8k --top $(SRC) --pcf $(PCF).pcf --asc $(SRC).asc --json $(SRC).json
+
+time:
+	icetime -c 100 -mt -d hx8k -p $(PCF).pcf $(SRC).asc
 
 upload:
 	icepack $(SRC).asc $(SRC).bin
