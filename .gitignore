@@ -52,18 +52,18 @@ tags
 
 ## Intermediate Files
 # Simulation
-.vvp
-.vcd
-.txt
+*.vvp
+*.vcd
+*.txt
 
 # Linting
 obj_dir/
 
 # Synthesis
-.json
+*.json
 
 # Placement and Routing
-.asc
+*.asc
 
 # Final Bitstream
-.bin
+*.bin

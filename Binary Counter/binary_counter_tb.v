@@ -1,4 +1,5 @@
 `timescale 10ns / 10ps
+`default_nettype none
 
 module binary_counter_tb();
 
