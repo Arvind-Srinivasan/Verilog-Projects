@@ -14,9 +14,11 @@ Uses relatively low-cost (~$75) parts:
 * [Alchitry Cu](https://alchitry.com/products/alchitry-cu-fpga-development-board) dev board
     * [Lattice iCE40-HX8K FPGA](https://www.latticesemi.com/view_document?document_id=49312) with 100 MHz clock
     * [Schematic](https://cdn.shopify.com/s/files/1/2702/8766/files/alchitry_cu_sch.pdf)
+![Alchitry Cu](https://cdn.shopify.com/s/files/1/2702/8766/products/DSC_3531.jpg)
 * [Alchitry Io](https://alchitry.com/collections/all/products/alchitry-io) expansion board
     * Provides all needed IO connections
     * [Schematic](https://cdn.shopify.com/s/files/1/2702/8766/files/alchitry_io_sch.pdf)
+![Alchitry Io](https://cdn.shopify.com/s/files/1/2702/8766/products/DSC_6210-Edit_a787ff5a-ca58-49f5-9b8a-2fca8dda3a07.jpg)
 
 ## Software
 This project was tested to run on [macOS Mojave](https://en.wikipedia.org/wiki/MacOS_Mojave) 10.14.6, and may not work on other operating system or macOS versions. The following [brew](https://brew.sh) packages are required:

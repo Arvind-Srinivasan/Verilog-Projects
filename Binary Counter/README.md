@@ -12,3 +12,6 @@ This is a generic PCF (Physical Constraints File) file containing the USB output
 
 ## [Makefile](Makefile)
 This a generic Makefile designed around providing Make targets that each accomplish part of the full toolchain. The main commands to use are `test` to handle a simulation check workflow (`clean`, `lint`, and `simulate`) and `check` to handle a hardware check workflow (`clean`, `lint`, `synthesize`, `place`, `time`). It makes use of Scansion to display the simulation results. Once both of those checks pass, `make` using the `all` target does both checks and also run `upload`.
+
+## Demo
+![Demo](demo.gif)
