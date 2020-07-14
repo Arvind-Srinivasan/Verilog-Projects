@@ -43,6 +43,9 @@ rm -rf alchitry-loader
 ### Binary Counter
 Simple project using the 8 Cu LEDs to count up to 2<sup>8</sup> and display binary values.
 
+### Decimal Counter
+Simple project using the 24 Io LEDs to count up to 24 and displays values.
+
 ## Resources
 * [Verilator](https://github.com/verilator/verilator) (used for linting of Verilog source files)
 * [ICARUS Verilog](https://github.com/steveicarus/iverilog) (used for simulation of Verilog source files)
@@ -50,6 +53,7 @@ Simple project using the 8 Cu LEDs to count up to 2<sup>8</sup> and display bina
 * [nextpnr](https://github.com/YosysHQ/nextpnr) (used for placement and routing after synthesis)
 * [Project IceStorm](https://github.com/YosysHQ/icestorm) (used for timing analysis and bitstream generation)
 * [Alchitry Loader](https://github.com/ianmclinden/alchitry-loader) (fork with macOS support for uploading to the Alchitry Cu)
+* [Scansion](http://www.logicpoet.com/scansion/) (software used to read VCD files)
 * [ASIC World](http://www.asic-world.com/verilog/index.html) (good Verilog reference)
 * [iCEBreaker examples](https://github.com/icebreaker-fpga/icebreaker-examples) (useful Verilog examples for common tasks)
 * [Verilog OS X](https://github.com/kehribar/verilog-osx) (useful makefile and simulation example)
