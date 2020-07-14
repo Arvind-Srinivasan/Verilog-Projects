@@ -22,7 +22,7 @@ always begin
 end
 
 binary_counter binary_counter_inst(
-  .clk(clock),
+  .clock(clock),
   .led(leds)
 );
 
