@@ -1,4 +1,4 @@
-# Verilog-Projects
+# Verilog Projects
 A variety of projects using a [FOSS Verilog toolchain](https://symbiflow.github.io) for [Lattice iCE40](http://www.latticesemi.com/en/Products/FPGAandCPLD/iCE40) FPGAs on the [Alchitry Cu](https://cdn.alchitry.com/docs/Alchitry%20Cu%20Product%20Brief.pdf)
 
 ## FOSS Software Toolchain
@@ -12,7 +12,7 @@ A variety of projects using a [FOSS Verilog toolchain](https://symbiflow.github.
 ## Hardware
 Uses relatively low-cost (~$75) parts:
 * [Alchitry Cu](https://alchitry.com/products/alchitry-cu-fpga-development-board) dev board
-    * [Lattice iCE40-HX8K FPGA](https://www.latticesemi.com/view_document?document_id=49312) with 100 MHz clock
+    * [iCE40-HX8K](https://www.latticesemi.com/view_document?document_id=49312) FPGA with 100 MHz clock
     * [Schematic](https://cdn.shopify.com/s/files/1/2702/8766/files/alchitry_cu_sch.pdf)
 ![Alchitry Cu](https://cdn.shopify.com/s/files/1/2702/8766/products/DSC_3531.jpg)
 * [Alchitry Io](https://alchitry.com/collections/all/products/alchitry-io) expansion board
@@ -38,14 +38,12 @@ git clone https://github.com/ianmclinden/alchitry-loader.git
 cd alchitry-loader
 make
 sudo make install
-cd ..
-rm -rf alchitry-loader
 ```
 ## Projects
-### Binary Counter
+### [Binary Counter](Binary%20Counter)
 Simple project using the 8 Cu LEDs to count up to 2<sup>8</sup> and display binary values.
 
-### Decimal Counter
+### [Decimal Counter](Decimal%20Counter)
 Simple project using the 24 Io LEDs to count up to 24 and displays values.
 
 ## Resources
@@ -60,7 +58,7 @@ Simple project using the 24 Io LEDs to count up to 24 and displays values.
 * [iCEBreaker examples](https://github.com/icebreaker-fpga/icebreaker-examples) (useful Verilog examples for common tasks)
 * [Verilog OS X](https://github.com/kehribar/verilog-osx) (useful makefile and simulation example)
 * [Cu-Base-Project](https://github.com/alchitry/Cu-Base-Project) (base Alchitry Verilog project)
-* [Alchitry Labs](https://github.com/alchitry/Alchitry-Labs)
+* [Alchitry Labs](https://github.com/alchitry/Alchitry-Labs) (Alchitry IDE providing some default files and examples)
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
