@@ -3,7 +3,8 @@ SRC       = binary_counter
 PCF       = cu
 SCANSION  = /Applications/Scansion.app
 
-.PHONY: all test check clean lint simulate synthesize place time upload
+.PHONY: %
+
 all: clean lint simulate synthesize place time upload
 
 test: clean lint simulate
