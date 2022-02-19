@@ -1,17 +1,17 @@
 # Verilog Projects
-A variety of projects using a [FOSS Verilog toolchain](https://symbiflow.github.io) for [Lattice iCE40](http://www.latticesemi.com/en/Products/FPGAandCPLD/iCE40) FPGAs on the [Alchitry Cu](https://cdn.alchitry.com/docs/Alchitry%20Cu%20Product%20Brief.pdf)
+A variety of projects using a [FOSS Verilog toolchain](https://symbiflow.github.io) for [Lattice iCE40](http://www.latticesemi.com/en/Products/FPGAandCPLD/iCE40) FPGAs on the [Alchitry Cu](https://alchitry.com/boards/cu)
 
 ## FOSS Software Toolchain
 * [Verilator](https://www.veripool.org/wiki/verilator)
 * [ICARUS Verilog](http://iverilog.icarus.com)
-* [Yosys Open SYnthesis Suite](http://www.clifford.at/yosys/)
-* [nextpnr](http://www.clifford.at/papers/2018/nextpnr/slides.pdf)
-* [Project IceStorm](http://www.clifford.at/icestorm/)
+* [Yosys Open SYnthesis Suite](http://bygone.clairexen.net/yosys/)
+* [nextpnr](https://arxiv.org/pdf/1903.10407.pdf)
+* [Project IceStorm](http://bygone.clairexen.net/icestorm/)
 * [Alchitry Loader](https://alchitry.com/pages/alchitry-loader)
 
 ## Hardware
 Uses relatively low-cost (~$75) parts:
-* [Alchitry Cu](https://alchitry.com/products/alchitry-cu-fpga-development-board) dev board
+* [Alchitry Cu](https://alchitry.com/boards/cu) dev board
     * [iCE40-HX8K](https://www.latticesemi.com/view_document?document_id=49312) FPGA with 100 MHz clock
     * [Schematic](https://cdn.shopify.com/s/files/1/2702/8766/files/alchitry_cu_sch.pdf)
 ![Alchitry Cu](https://cdn.shopify.com/s/files/1/2702/8766/products/DSC_3531.jpg)
@@ -21,7 +21,7 @@ Uses relatively low-cost (~$75) parts:
 ![Alchitry Io](https://cdn.shopify.com/s/files/1/2702/8766/products/DSC_6210-Edit_a787ff5a-ca58-49f5-9b8a-2fca8dda3a07.jpg)
 
 ## Software
-This project was tested to run on [macOS Mojave](https://en.wikipedia.org/wiki/MacOS_Mojave) 10.14.6, and may not work on other operating system or macOS versions. The following [brew](https://brew.sh) packages are required:
+This project was tested to run on macOS Mojave 10.14.6, and may not work on other operating system or macOS versions. The following [brew](https://brew.sh) packages are required:
 * `make`
 * `verilator`
 * `icarus-verilog`
@@ -29,15 +29,9 @@ This project was tested to run on [macOS Mojave](https://en.wikipedia.org/wiki/M
 * `ktemkin/oss-fpga/nextpnr-ice40`
 * `ktemkin/oss-fpga/icestorm`
 
-Install using the following (after ensuring [Homebrew](https://docs.brew.sh/Installation) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) are installed):
+Install `install.sh` script 
 ```shell
-brew install make verilator icarus-verilog yosys
-brew tap ktemkin/oss-fpga
-brew install --HEAD nextpnr-ice40 icestorm
-git clone https://github.com/ianmclinden/alchitry-loader.git
-cd alchitry-loader
-make
-sudo make install
+./install.sh
 ```
 ## Projects
 ### [Binary Counter](Binary%20Counter)
