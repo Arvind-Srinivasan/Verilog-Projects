@@ -67,3 +67,6 @@ obj_dir/
 
 # Final Bitstream
 *.bin
+
+# Tool
+alchitry-loader/
